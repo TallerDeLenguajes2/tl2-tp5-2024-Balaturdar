@@ -29,7 +29,7 @@ public class ProductosController : ControllerBase
     }
 
     [HttpPut("/api/Producto/{id}")]
-    public IActionResult ModificarNombreProducto(int id, [FromBody] Productos producto){
+    public IActionResult ModificarNombreProducto(int id, Productos producto){
         prodRepo.ModProducto(id,producto);
         return Ok();
     }

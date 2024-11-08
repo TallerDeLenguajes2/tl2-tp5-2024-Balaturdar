@@ -52,13 +52,12 @@ public class ProductosRepository{
                 while (reader.Read())
                 {
                     var producto = new Productos();
-                    producto.IdProductos = Convert.ToInt32(reader["idProductos"]);
+                    producto.IdProductos = Convert.ToInt32(reader["idProducto"]);
                     producto.Descripcion = reader["Descripcion"].ToString();
                     producto.Precio = Convert.ToInt32(reader["Precio"]);
                     productos.Add(producto);
                 }
             }
-            command.ExecuteReader();
             connection.Close();
         }
         return productos;
