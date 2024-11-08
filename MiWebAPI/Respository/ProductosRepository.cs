@@ -4,7 +4,7 @@ using Microsoft.Data.Sqlite;
 public class ProductosRepository{
     private string CadenaDeConexion;
 
-    ProductosRepository()
+    public ProductosRepository()
     {
         CadenaDeConexion = "Data Source=db/Tienda.db";
     }
