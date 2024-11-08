@@ -5,12 +5,12 @@ namespace MiWebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class PresupuestosController : ControllerBase
+public class ProductosController : ControllerBase
 {
-    private readonly ILogger<PresupuestosController> _logger;
+    private readonly ILogger<ProductosController> _logger;
     private ProductosRepository prodRepo;
 
-    public PresupuestosController(ILogger<PresupuestosController> logger)
+    public ProductosController(ILogger<ProductosController> logger)
     {
         _logger = logger;
         prodRepo = new ProductosRepository();
